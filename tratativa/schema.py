@@ -19,3 +19,10 @@ schemaCompras = StructType([
     StructField("TIPO_ENDERECO", StringType(), True),
     StructField("DATA_PROCESSAMENTO", DateType(), True)
 ])
+
+schemaValidacaoCompras = StructType([
+    StructField("DATA_PROCESSAMENTO", DateType(), True),
+    StructField("DATA_EMISSAO", DateType(), True),
+    StructField("NUMERO_NF", StringType(), True),
+    StructField("CNPJ_FORNECEDOR", StringType(), True)
+])
